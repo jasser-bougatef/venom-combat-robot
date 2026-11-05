@@ -1,0 +1,54 @@
+
+   RDM - Flexion
+   Calcul des Structures par la Méthode des Éléments Finis
+
+   Version  - 6.19 - 26 novembre 2018
+
+   Utilisateur : Eniso
+
+$debut du fichier
+$version
+6.19
+$SI unites
+$nom du fichier
+etude flexion.fle
+$date
+13/5/2025
+$materiau
+nom Acier
+mod 2.10000E+11
+mas 8.00000E+03
+lim 2.50000E+08
+///
+$noeuds
+7
+1  0.00000000000E+00
+2  1.50000000000E-02
+3  3.50000000000E-02
+4  7.00000000000E-02
+5  1.05000000000E-01
+6  1.25000000000E-01
+7  1.40000000000E-01
+$sections
+1
+noe 1 7
+nom Rond plein
+des D = 24.00 (mm)
+air  4.52389342117E-04
+izz  1.62860163162E-08
+vys  1.20000000000E-02
+vyi  1.20000000000E-02
+///
+$liaisons
+2
+sup 2 1
+sup 2 7
+$gpesanteur
+10.000
+$charges
+nodale 4  2.00000000000E+02  0.00000000000E+00
+trapeze 2 3 -2.50000000000E+03 -2.50000000000E+03
+trapeze 5 6 -2.50000000000E+03 -2.50000000000E+03
+pesanteur
+////
+$fin du fichier
